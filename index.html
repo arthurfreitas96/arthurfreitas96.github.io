@@ -116,8 +116,9 @@
 
         <!-- Projects First Row -->
         <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid bright" src="img/fazsol2.jpg" alt="">
+          <div id="wrapper1" class="col-lg-6">
+            <img class="img-fluid bright hover" src="img/fazsol2.jpg" alt="">
+	    <p id="nomproj1">Projeto 1</p>
           </div>
           <div class="col-lg-6">
             <img class="img-fluid bright" src="img/fazsol1.jpg" alt="">
@@ -231,6 +232,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script>
+    	$('.hover').mouseover(function() {
+  		$('#nomproj1').css("visibility","visible");
+	});
+
+	$('.hover').mouseout(function() {
+  		$('#nomproj1').css("visibility","hidden");
+	});  
+    </script>
 
   </body>
 
